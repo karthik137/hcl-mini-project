@@ -11,15 +11,14 @@ function adminLogin() {
 
     //Query from server
     $.get( "http://localhost:27018/userdb/admin", function( data ) {
-        // alert(JSON.stringify(data));
 
+        //Check username and password
         if(data[0].userId === username && data[0].password === password){
             //redirect to home page
             alert("Success");
+            window.location.href = "/home.html";
         }else{
             alert("Invalid username and password");
         }
       });
-
-    // alert("Inside admin login");
 }
