@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     function displayUserList(){
-        console.log("Inside displayUsers");
+        // console.log("Inside displayUsers");
         var dataSets = [];
         var userList = [];
         $.ajax({
