@@ -47,16 +47,16 @@
     <hr class="w-25 mx-auto pt-4">
 
     <div class="w-50 mx-auto pb-5">
-      <form method="post" action="">
+      <!-- <form> -->
         
           <label for="aname"><b>User name:</b></label>
-          <input type="text" name="aname" class="form-control" id="aname" autocomplete="off">
+          <input type="text" name="aname" class="form-control" id="username" autocomplete="off">
 			</br>
           <label for="apass"><b>Password:</b></label>
-          <input type="password" name="apass" class="form-control" id="apass" autocomplete="off">
+          <input type="password" name="apass" class="form-control" id="password" autocomplete="off">
 			</br>
-        <button type="submit" name="submit" class="btn btn-primary">Login</button>
-      </form>
+        <button type="submit" name="submit" class="btn btn-primary" onclick="adminLogin()">Login</button>
+      <!-- </form> -->
     </div>
 
   </div>
@@ -104,7 +104,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="javascripts/login.js"></script>
 </body>
 
 </html>
