@@ -27,6 +27,7 @@ function registerUser() {
         success: function(data) { 
             alert("User created");
             //Redirect to list of users
+            window.location.href("userDetails.html");
         },
         contentType: "application/json",
         dataType: 'json'

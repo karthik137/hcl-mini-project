@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap.min.css">
 		<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
 	</head>
 
 <body>
@@ -29,7 +30,7 @@
 			</li>
 
       <li class="nav-item ">
-				<a class="nav-link" href="addUser.php">Add_User</a>
+				<a class="nav-link" href="addUser.html">Add_User</a>
 			</li>
       <li class="nav-item ">
 				<a class="nav-link" href="removeUser.php">Remove_User</a>
@@ -49,8 +50,8 @@
   <section class="gray-bg">
   <div class="container mb-5 pt-5">
        <div class="section-container text-center pb-5">
-      <h2>User <span> Details</span></h2>
-      <table border="2" width="100%">
+      <h2>User List</h2>
+      <!-- <table border="2" width="100%">
         <tr align="center">
           <th>Sno.</th>
           <th>Name</th>
@@ -60,7 +61,18 @@
           <th>Mobile Number</th>
           <th>Date Of Birth</th>
         </tr>
-      </table>
+      </table> -->
+      <table id="userTable" class="table" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>User Id</th>
+                <th>Address</th>
+                <th>Mobile Number</th>
+                <th>Date Of Birth</th>
+            </tr>
+        </thead>
+    </table>
     </div>
   </div>
 <section>
@@ -107,6 +119,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+<script src="javascripts/getUserList.js"></script>
 </body>
 </html>
