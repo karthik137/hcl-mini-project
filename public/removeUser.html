@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>AddUser</title>
+		<title>Remove</title>
 		<meta charset="utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="bootstrap.min.css">
@@ -21,18 +21,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="home.php">Home </a>
+          <a class="nav-link" href="home.html">Home </a>
         </li>
        
         <li class="nav-item ">
           <a class="nav-link" href="userDetails.html">User_Details</span></a>
         </li>
   
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Add_User<span class="sr-only">(current)</a>
-        </li>
         <li class="nav-item ">
-          <a class="nav-link" href="removeUser.html">Remove_User</a>
+          <a class="nav-link" href="addUser.html">Add_User</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Remove_User<span class="sr-only">(current)</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="#">Suspend</a>
@@ -49,32 +49,20 @@
 
 <section>
   <div class="container mb-4">
-    <h1 class="text-center text-capitalize pt-5" id="head">Registration</h1>
+    <h1 class="text-center text-capitalize pt-5" id="head">Remove User</h1>
     <hr class="w-50 mx-auto pt-4">
 
     <div class="w-50 mx-auto pb-5">
-      <!-- <form method="post" action="" enctype="multipart/form-data"> -->
+      <form method="post" action="">
 		  <label for="name"><b>Name:</b></label>
           <input type="text" name="name" class="form-control" id="name" autocomplete="off">
 			</br>
           <label for="uname"><b>User Id:</b></label>
-          <input type="text" name="uname" class="form-control" id="username" autocomplete="off">
+          <input type="text" name="uname" class="form-control" id="uname" autocomplete="off">
 			</br>
-          <label for="upass"><b>Password:</b></label>
-          <input type="password" name="upass" class="form-control" id="password" autocomplete="off">
-			</br>
-		  <label for="address"><b>Address:</b></label>
-          <textarea name="address" class="form-control" id="address" autocomplete="off"></textarea>
-			</br>
-		  <label for="dob"><b>Date Of Birth:</b></label>
-          <input type="text" name="dob" class="form-control" id="dob" autocomplete="off">
-			</br>
-          <label for="mob"><b>Mobile No.:</b></label>
-          <input type="text" name="mob" class="form-control" id="mobileNumber" autocomplete="off">
-			</br>
-        <button type="submit" name="submit" class="btn btn-primary" onclick=registerUser()>Create User</button>
-		<button type="reset" name="reset" class="btn btn-primary">Reset</button>
-      <!-- </form> -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+		<button type="reset" class="btn btn-primary">Reset</button>
+      </form>
     </div>
 
   </div>
@@ -83,7 +71,12 @@
 <!--Registration End-->
 
 	
-
+	
+	
+	
+	
+	
+	
 	<!--footer Start-->
   
   <footer class="footer bg-dark text-white py-3">
@@ -97,6 +90,7 @@
 		<div class="col-lg-2 col-md-6 footer-links">
           
         </div>
+        
         <div class="col-lg-3 col-md-6 footer-contact">
           <h4>Contact Us</h4>
           <p>
@@ -125,7 +119,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="javascripts/registerUser.js"></script>
+
 </body>
 
 </html>
